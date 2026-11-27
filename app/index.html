@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maplewood Ledger — the Alvarez household budget</title>
+<meta name="description" content="Maplewood Ledger keeps the Alvarez household's money in one place: income, spending, budgets, savings goals, bills and reports — all saved in your browser.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f766e'/%3E%3Cpath d='M9 21h14M11 21v-8a5 5 0 0 1 10 0v8' stroke='%23fde68a' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#/dashboard">
+      <span class="brand-mark" aria-hidden="true">◈</span>
+      <span class="brand-text"><strong>Maplewood Ledger</strong><small>The Alvarez household</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Sections">
+      <a href="#/dashboard" data-nav="dashboard">Dashboard</a>
+      <a href="#/transactions" data-nav="transactions">Transactions</a>
+      <a href="#/budget" data-nav="budget">Budget</a>
+      <a href="#/goals" data-nav="goals">Goals</a>
+      <a href="#/bills" data-nav="bills">Bills</a>
+      <a href="#/reports" data-nav="reports">Reports</a>
+      <a href="#/settings" data-nav="settings">Settings</a>
+    </nav>
+    <div class="month-picker">
+      <label for="month-select">Month</label>
+      <select id="month-select"></select>
+    </div>
+  </div>
+</header>
+<main class="wrap" id="view" aria-live="polite"></main>
+<footer class="wrap site-footer">
+  <p>Maplewood Ledger runs entirely in your browser. Your figures are stored on this device with local storage — nothing is sent anywhere.</p>
+  <p><a href="#/settings">Settings &amp; data</a> · <a href="#/reports">Monthly reports</a> · <a href="#/goals">Savings goals</a></p>
+</footer>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
